@@ -315,9 +315,9 @@ li {
   content: "";
   position: absolute;
   width: 100%;
-  box-shadow: 0.35rem 0.35rem 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0.35rem 0.35rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.3);
-  height: 0.5rem;
+  height: 10.5rem;
 }
 .top__right--item {
   display: flex;
@@ -377,8 +377,88 @@ li {
   min-width: 13.3rem;
 }
 
-/* btn
+/* give
 ---------------------------------------- */
+.give {
+  background-color: #fffedd;
+  padding: 3rem 2rem 3.2rem;
+}
+.give__catch {
+  position: relative;
+  text-align: center;
+  font-size: 2.1rem;
+  color: #fa7da3;
+  padding: 0 0 0.4rem 0;
+}
+@media screen and (min-width: 768px) {
+  .give__catch {
+    display: flex;
+    padding: 1.1rem 0 0.4rem 0;
+    font-size: 24px;
+  }
+}
+.give__catch::before, .give__catch::after {
+  position: absolute;
+  top: 45%;
+  width: 2.1rem;
+  height: 0.14rem;
+  content: "";
+  background-color: #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  .give__catch::before, .give__catch::after {
+    top: 51%;
+    width: 2rem;
+  }
+}
+.give__catch::before {
+  right: calc(50% + 3.8rem);
+  transform: rotate(63deg);
+}
+@media screen and (min-width: 768px) {
+  .give__catch::before {
+    right: calc(50% + 54px);
+  }
+}
+.give__catch::after {
+  left: calc(50% + 3.5rem);
+  transform: rotate(-63deg);
+}
+@media screen and (min-width: 768px) {
+  .give__catch::after {
+    left: calc(50% + 54px);
+  }
+}
+.give .give__item {
+  text-align: center;
+  margin: 0 auto;
+}
+.give .give__item--title {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fa7da3;
+  font-size: 2.1rem;
+  color: #fff;
+  padding: 0.8rem 0;
+}
+.give .give__item--info {
+  color: #fa7da3;
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  border: 0.1rem solid #fa7da3;
+  padding: 0.8rem 0;
+}
+.give .give__item .large {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.give .give__item .small {
+  font-size: 3.1rem;
+}
+.give p {
+  font-size: 1rem;
+  color: #333;
+}
+
 /* mask
 ---------------------------------------- */
 .mask {

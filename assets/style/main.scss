@@ -324,9 +324,9 @@ li {
             content: "";
             position: absolute;
             width: 100%;
-            box-shadow: 0.35rem 0.35rem 0 rgba(0,0,0,0.25);
+            box-shadow: 0.35rem 0.35rem 0 rgba(0,0,0,0.2);
             background-color: rgba(255,255,255,0.3);
-            height: 0.5rem;
+            height: 10.5rem;
         }
     }
     &__right--item {
@@ -387,8 +387,87 @@ li {
     }
 }
 
-/* btn
+/* give
 ---------------------------------------- */
+.give {
+    background-color: #fffedd;
+    padding: 3rem 2rem 3.2rem;
+
+    &__catch {
+        position: relative;
+        text-align: center;
+        font-size: 2.1rem;
+        color: #fa7da3;
+        padding: 0 0 0.4rem 0;
+
+        @include pc {
+            display: flex;
+            padding: 1.1rem 0 0.4rem 0;
+            font-size: 24px;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            top: 45%;
+            width: 2.1rem;
+            height: 0.14rem;
+            content: "";
+            background-color: #fa7da3;
+
+            @include pc {
+                top: 51%;
+                width: 2rem;
+            }
+        }
+        &::before {
+            right: calc(50% + 3.8rem);
+            transform: rotate(63deg);
+
+            @include pc {
+                right: calc(50% + 54px);
+            }
+        }
+        &::after {
+            left: calc(50% + 3.5rem);
+            transform: rotate(-63deg);
+
+            @include pc {
+              left: calc(50% + 54px);
+            }
+        }
+    }
+    .give__item {
+        text-align: center;
+        margin: 0 auto;
+
+        &--title {
+            border-radius: 1rem 1rem 0 0;
+            background-color: #fa7da3;
+            font-size: 2.1rem;
+            color: #fff;
+            padding: 0.8rem 0;
+        }
+        &--info {
+            color: #fa7da3;
+            border-radius: 0 0 1rem 1rem;
+            background-color: #fff;
+            border: 0.1rem solid #fa7da3;
+            padding: 0.8rem 0;
+        }
+        .large {
+          font-size: 4.2rem;
+          font-weight: 700;
+        }
+        .small {
+            font-size: 3.1rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        color: #333;
+    }
+}
 
 
 /* mask
