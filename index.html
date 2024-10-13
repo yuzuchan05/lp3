@@ -52,9 +52,10 @@
     <header class="top">
         <div class="top__container">
             <div class="top__left">
-                <div class="top__left--title">
-                    <img src="/assets/image/top_text.png" alt="全身脱毛　顔・VIO込">
-                </div>
+                <picture class="top__left--title">
+                    <source srcset="/assets/image/top_text.png" media="(min-width: 768px)">
+                    <img class="top__left--title-sp" src="/assets/image/top_text_sp.png" alt="全身脱毛　顔・VIO込">
+                </picture>
             </div>
             <div class="top__right">
                 <div class="top__right--upper">
@@ -87,22 +88,50 @@
         <p>クレンジング/洗顔/フェイスヒーリング/整肌</p>
     </section>
 
+    <!------------- contact ----------------->
+
+    <section class="contact">
+        <div class="contact__container">
+            <h1 class="contact__title">無料体験実施中！</h1>
+            <ul class="btn__form">
+                <li><a href="#" class="btn btn__form-02">カウンセリング予約はこちら(無料)</a></li>
+            </ul>
+        </div>
+    </section>
     <!------------- free ----------------->
 
-        <section class="free">
-            <div class="free__container">
-                <div class="free__title">無料体験実施中</div>
-                <ul class="btn__form">
-                    <li><a href="#" class="btn btn__form-02">カウンセリング予約はこちら(無料)</a></li>
-                </ul>
+    <section class="free">
+        <h1 class="free__item">無料体験内容</h1>
+        <div class="free__item--info free__item--info-01">〈脱毛体験〉V<small>(10分)or</small>両脇<small>(10分)</small></div>
+        <div class="free__item--info free__item--info-02">〈美顔体験〉フェイシャルトリートメント<small>(40分コース1回)</small></div>
+    </section>
+
+    <!------------- point ----------------->
+
+    <section class="point">
+        <div class="point__container">
+            <div class="point__logo">
+                <img src="/assets/image/point_logo.png" alt="Kirameki Beauty Labo"> が選ばれる
             </div>
-        </section>
-
-    <!------------- voice ----------------->
-
-        <section class="voice">
-
-        </section>
+            <h1>3つのポイント</h1>
+            <div class="point__item">
+                <div class="point__item--title"><div class="point__item_01">POINT1</div><div class="point__item_02">通い放題</div></div>
+                <div class="point__item--info">
+                    <p>納得いくまで何度でも、追加料金なく安心して通っていただけます。</p>
+                    <ol class="flex">
+                        <li>
+                            <div class="point__logo point__logo_01"><img src="/assets/image/logo.svg" alt="Kirameki Beauty Labo"></div>
+                            <div class="point__note point__note_01">来店1回で全身1回</div>
+                        </li>
+                        <li>
+                            <div class="point__logo point__logo_02">Aサロン</div>
+                            <div class="point__note point__note_02">来店3回で全身1回</div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!------------- questions ----------------->
 

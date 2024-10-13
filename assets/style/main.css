@@ -19,7 +19,7 @@ body {
   font-family: "Noto Sans JP";
   font-size: 1.6rem;
   font-weight: 400;
-  color: #000;
+  color: #333;
 }
 
 * {
@@ -34,7 +34,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 
 img {
@@ -203,7 +203,8 @@ li {
   color: #fff;
   display: flex;
   margin-top: 6.3rem;
-  background-size: contain;
+  background-size: 21rem 22rem;
+  background-position: 4% 100%;
 }
 @media screen and (min-width: 768px) {
   .top__container {
@@ -232,6 +233,7 @@ li {
 .top__left {
   display: flex;
   flex-direction: column;
+  width: 52%;
 }
 @media screen and (min-width: 768px) {
   .top__left {
@@ -268,6 +270,9 @@ li {
     top: 36%;
     left: 16%;
   }
+}
+.top__left--title-sp {
+  margin: 1.3rem 0 1.1rem 0;
 }
 .top__right {
   display: flex;
@@ -419,146 +424,219 @@ li {
 }
 .give p {
   font-size: 1rem;
-  color: #333;
   padding: 1rem 0 0 0;
   text-align: center;
 }
 
-/* mask
+/* contact
 ---------------------------------------- */
-.mask {
-  background-image: url("/assets/image/mask_sp.jpg");
-  background-size: cover;
-  padding: 4.8rem 1.6rem;
-  min-height: 68rem;
+.contact {
+  padding: 4.8rem 2rem 1rem;
 }
 @media screen and (min-width: 768px) {
-  .mask {
-    background-image: url("/assets/image/mask_pc.jpg");
-    min-height: 55rem;
-    padding: 0;
+  .contact {
     height: auto;
-    width: 100%;
-    min-height: 55rem;
-    overflow: hidden;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1500px) {
-  .mask {
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1501px) {
-  .mask {
-    background-size: cover;
-    background-position: center;
-    padding-top: 36.6666666667%;
-    position: relative;
-    height: 0;
-  }
-}
-.mask__container {
-  color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .mask__container {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    padding: 12.5rem 4rem 0 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mask__item {
-    margin-left: 56.8%;
-    width: 46.7rem;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1501px) {
-  .mask__item {
-    padding-top: 0px;
-    margin: 0 auto;
-    width: 42.7rem;
-    position: absolute;
-    top: 22%;
-    right: 13%;
-  }
-}
-.mask h1 {
-  font-family: "EB Garamond";
-  font-size: 3rem;
-  font-weight: 700;
+.contact__container {
   text-align: center;
+}
+.contact__title {
+  font-size: 2.1rem;
+  color: #fa7da3;
+  font-weight: 700;
   padding: 0 0 1.2rem 0;
 }
 @media screen and (min-width: 768px) {
-  .mask h1 {
-    text-align: left;
-    font-size: 3.8rem;
-    line-height: 1.4210526316;
-    padding: 0 0 1rem 0;
+  .contact__title {
+    font-size: 2.1rem;
   }
 }
-.mask h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  text-align: center;
+.contact .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4.8rem 1rem 5.1rem;
+  letter-spacing: 0.2rem;
+  border-radius: 4rem;
+  font-size: 2.1rem;
+  line-height: 1.3333333333;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+}
+.contact .btn__form {
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .mask h2 {
-    text-align: left;
+  .contact .btn__form {
+    display: flex;
+    padding: 0;
+    gap: 3.2rem;
+    margin: 0;
   }
 }
-.mask p {
-  font-size: 1.4rem;
-  line-height: 2.2857142857;
-  text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1607843137);
-  padding: 1.8rem 0 0 0;
+.contact .btn__form-02 {
+  background-color: #49c43d;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .contact .btn__form-02 {
+    margin: 0 4.8rem 0 0;
+  }
+}
+.contact .btn__form-02:hover {
+  filter: brightness(1.2);
+}
+.contact .btn__form-02::after {
+  content: "";
+  background-image: url(/assets/image/arrow.svg);
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  background-size: contain;
+  margin: 0.2rem 0 0 1.3rem;
 }
 
-/* voice
+/* contact
 ---------------------------------------- */
-.voice {
+.free {
+  padding: 0.8rem 2rem 3rem;
+}
+.free__item {
+  font-size: 1.7rem;
+  color: #50bfff;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin: 1.3rem 0 2rem;
+  padding: 1rem 0;
+  border-top: 0.1rem solid #50bfff;
+  border-bottom: 0.1rem solid #50bfff;
+  text-align: center;
+}
+.free__item--info {
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.2;
+}
+.free__item--info-01 {
+  padding-bottom: 0.5rem;
+}
+
+/* point
+---------------------------------------- */
+.point {
   padding: 5rem 1.6rem 5rem;
   margin: 0 auto;
   max-width: 102.4rem;
 }
 @media screen and (min-width: 768px) {
-  .voice {
+  .point {
     padding: 7.7rem 1.6rem 7.5rem;
     max-width: unset;
   }
 }
-.voice__title {
-  font-size: 3rem;
-  font-family: "EB Garamond";
-  font-weight: 700;
+.point__container {
+  text-align: center;
+}
+.point__logo {
+  font-size: 1.8rem;
+  color: #4d2b1b;
+  font-weight: 500;
   text-align: center;
   letter-spacing: 0.15rem;
 }
-@media screen and (min-width: 768px) {
-  .voice__title {
-    font-size: 4.5rem;
-    line-height: 1.40625;
-    letter-spacing: 0.22rem;
-  }
-}
-.voice__title--jp {
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 0.8rem 0 2.9rem 0;
+.point h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fa7da3;
+  padding: 2.1rem 0 2.9rem 0;
   text-align: center;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.1rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
-  .voice__title--jp {
+  .point h1 {
     font-size: 2rem;
     padding: 0.7rem 0 2.2rem 0;
   }
 }
-.voice .swiper__container {
+.point h1::before {
+  content: "";
+  background-image: url(/assets/image/star.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  left: 2rem;
+  top: 6%;
+}
+.point h1::after {
+  content: "";
+  background-image: url(/assets/image/star_right.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 6%;
+}
+.point__item {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 35rem;
+}
+.point__item--title {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fa7da3;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.point__item_01 {
+  padding-right: 1rem;
+}
+.point__item_02 {
+  border-left: 0.1rem solid #fff;
+  padding-left: 1rem;
+}
+.point__item--info {
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  border: 0.1rem solid #fa7da3;
+  padding: 1.3rem 1rem;
+}
+.point__item p {
+  width: 31rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+.point__item ol {
+  justify-content: center;
+  gap: 1rem;
+}
+.point__item__logo_01 {
+  background-color: #fff;
+  border: 1px solid #fa7da3;
+  padding: 4rem 3rem;
+}
+.point__item__logo_02 {
+  background-color: #fdf0f5;
+  border: 1px solid #666666;
+  padding: 4rem 3rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: #433e3f;
+  text-align: center;
+}
+.point__item__note {
+  font-size: 1.4rem;
+}
+.point .swiper__container {
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -567,76 +645,76 @@ li {
   --swiper-pagination-bullet-inactive-opacity: 1;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper__container {
+  .point .swiper__container {
     max-width: 115.6rem;
     margin-inline: auto;
   }
 }
-.voice .swiper {
+.point .swiper {
   padding: 0.8rem 3.9rem;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper {
+  .point .swiper {
     padding: 2rem 0;
     max-width: 98rem;
   }
 }
-.voice .swiper-slide {
+.point .swiper-slide {
   padding: 2.9rem 1.5rem 2.5rem 1.5rem;
   background-color: #DBF7F9;
   width: 28rem;
   margin: 0 0 1.6rem 0;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-slide {
+  .point .swiper-slide {
     padding: 4rem 1.7rem 3.8rem 1.5rem;
   }
 }
-.voice .swiper__img {
+.point .swiper__img {
   width: 8.5rem;
   height: 8rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper__img {
+  .point .swiper__img {
     width: 10.5rem;
     height: unset;
   }
 }
-.voice .swiper img {
+.point .swiper img {
   padding-left: 0.5rem;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper img {
+  .point .swiper img {
     width: 100%;
     padding-left: 0.5rem;
   }
 }
-.voice .swiper__ppl {
+.point .swiper__ppl {
   font-size: 1.4rem;
   text-align: center;
   padding: 1rem 0 1.6rem;
   letter-spacing: 0.03rem;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper__ppl {
+  .point .swiper__ppl {
     padding: 1.1rem 0 1.6rem;
   }
 }
-.voice .swiper p {
+.point .swiper p {
   font-size: 1.4rem;
   line-height: 2;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper p {
+  .point .swiper p {
     font-size: 1.6rem;
     line-height: 1.75;
   }
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-pagination {
+  .point .swiper-pagination {
     --swiper-pagination-color: #00AFBF;
     --swiper-pagination-bullet-inactive-color: #EEEEEE;
     --swiper-pagination-bullet-inactive-opacity: 1;
@@ -644,15 +722,15 @@ li {
     bottom: 1%;
   }
 }
-.voice .swiper-pagination-bullets {
+.point .swiper-pagination-bullets {
   bottom: -1%;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-pagination-bullets {
+  .point .swiper-pagination-bullets {
     bottom: 0%;
   }
 }
-.voice .swiper-button-next, .voice .swiper-button-prev {
+.point .swiper-button-next, .point .swiper-button-prev {
   background-size: contain;
   width: 3.2rem;
   height: 3.2rem;
@@ -662,31 +740,31 @@ li {
   transform: translateY(-54%);
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-button-next, .voice .swiper-button-prev {
+  .point .swiper-button-next, .point .swiper-button-prev {
     width: 4.8rem;
     height: 4.8rem;
   }
 }
-.voice .swiper-button-next::after, .voice .swiper-button-prev::after {
+.point .swiper-button-next::after, .point .swiper-button-prev::after {
   content: "";
 }
-.voice .swiper-button-prev {
+.point .swiper-button-prev {
   background-image: url(/assets/image/arrow_left.svg);
   left: 0%;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-button-prev {
+  .point .swiper-button-prev {
     top: 53%;
     transform: translateY(-50%);
     left: 0;
   }
 }
-.voice .swiper-button-next {
+.point .swiper-button-next {
   background-image: url(/assets/image/arrow_right.svg);
   right: 0%;
 }
 @media screen and (min-width: 768px) {
-  .voice .swiper-button-next {
+  .point .swiper-button-next {
     top: 53%;
     transform: translateY(-50%);
     right: 0;

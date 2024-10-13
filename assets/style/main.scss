@@ -41,7 +41,7 @@ body {
     font-family: "Noto Sans JP";
     font-size: 1.6rem;
     font-weight: 400;
-    color: #000;
+    color: #333;
 }
 * {
     line-height: 1.2;
@@ -53,7 +53,7 @@ img {
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
 
 img {
@@ -222,7 +222,8 @@ li {
         color: #fff;
         display: flex;
         margin-top: 6.3rem;
-        background-size: contain;
+        background-size: 21rem 22rem;
+        background-position: 4% 100%;
 
         @include pc {
             background-image: url("/assets/image/woman.png");
@@ -247,6 +248,7 @@ li {
     &__left {
         display: flex;
         flex-direction: column;
+        width: 52%;
 
         @include pc {
             width: 16.6rem;
@@ -278,6 +280,9 @@ li {
                 top: 36%;
                 left: 16%;
             }
+        }
+        &-sp {
+            margin: 1.3rem 0 1.1rem 0;
         }
     }
     &__right {
@@ -429,102 +434,117 @@ li {
 
     p {
         font-size: 1rem;
-        color: #333;
         padding: 1rem 0 0 0;
         text-align: center;
     }
 }
 
 
-/* mask
+/* contact
 ---------------------------------------- */
-.mask {
-    background-image: url("/assets/image/mask_sp.jpg");
-    background-size: cover;
-    padding: 4.8rem 1.6rem;
-    min-height: 68rem;
+.contact {
+    padding: 4.8rem 2rem 1rem;
 
     @include pc {
-        background-image: url("/assets/image/mask_pc.jpg");
-        min-height: 55rem;
-        padding: 0;
         height: auto;
-        width: 100%;
-        min-height: 55rem;
-        overflow: hidden;
-
-        @media (max-width:1500px) {
-            background-size: cover;
-            background-position: center;
-        }
-        @media (min-width:1501px) {
-            background-size: cover;
-            background-position: center;
-            padding-top: calc(550 / 1500* 100%);
-            position: relative;
-            height: 0;
-        }
     }
     &__container {
-        color: #fff;
+      text-align: center;
 
         @include pc {
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            padding: 12.5rem 4rem 0 0;
+
         }
     }
-    &__item {
-        @include pc {
-            margin-left: 56.8%;
-            width: 46.7rem;
+    &__title {
+      font-size: 2.1rem;
+      color: #fa7da3;
+      font-weight: 700;
+      padding: 0 0 1.2rem 0;
 
-            @media (min-width:1501px) {
-                padding-top: 0px;
-                margin: 0 auto;
-                width: 42.7rem;
-                position: absolute;
-                top: 22%;
-                right: 13%;
+        @include pc {
+            font-size: 2.1rem;
+        }
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 4.8rem 1rem 5.1rem;
+        letter-spacing: 0.2rem;
+        border-radius: 4rem;
+        font-size: 2.1rem;
+        line-height: calc(28 / 21);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 auto;
+
+        &__form {
+            margin: 0 auto;
+
+            @include pc {
+                display: flex;
+                padding: 0;
+                gap: 3.2rem;
+                margin: 0;
+            }
+        }
+        &__form-02 {
+            background-color: #49c43d;
+            color: #fff;
+
+            @include pc {
+                margin: 0 4.8rem 0 0;
+            }
+
+            &:hover {
+              filter: brightness(1.2);
+            }
+
+            &::after {
+              content: "";
+              background-image: url(/assets/image/arrow.svg);
+              width: 2.2rem;
+              height: 2.2rem;
+              display: flex;
+              align-items: center;
+              background-size: contain;
+              margin: 0.2rem 0 0 1.3rem;
             }
         }
     }
-    h1 {
-        font-family: "EB Garamond";
-        font-size: 3rem;
+}
+
+/* contact
+---------------------------------------- */
+.free {
+    padding: 0.8rem 2rem 3rem;
+
+    &__item {
+        font-size: 1.7rem;
+        color: #50bfff;
         font-weight: 700;
-        text-align: center;
-        padding: 0 0 1.2rem 0;
-
-        @include pc {
-            text-align: left;
-            font-size: 3.8rem;
-            line-height: calc(54 / 38);
-            padding: 0 0 1rem 0;
-        }
-    }
-    h2 {
-        font-size: 2.4rem;
-        font-weight: 600;
+        letter-spacing: 0.2rem;
+        margin: 1.3rem 0 2rem;
+        padding: 1rem 0;
+        border-top: 0.1rem solid #50bfff;
+        border-bottom: 0.1rem solid #50bfff;
         text-align: center;
 
-        @include pc {
+        &--info {
+            font-size: 1.4rem;
             text-align: left;
+            line-height: calc(24 / 20);
+
+            &-01 {
+              padding-bottom: 0.5rem;
+            }
         }
-    }
-    p {
-        font-size: 1.4rem;
-        line-height: calc(32 / 14);
-        text-shadow: 0 0.3rem 0.6rem #00000029;
-        padding: 1.8rem 0 0 0;
     }
 }
 
-/* voice
----------------------------------------- */
-.voice {
+  /* point
+  ---------------------------------------- */
+.point {
     padding: 5rem 1.6rem 5rem;
     margin: 0 auto;
     max-width: 102.4rem;
@@ -533,32 +553,121 @@ li {
         padding: 7.7rem 1.6rem 7.5rem;
         max-width: unset;
     }
+    &__container {
+      text-align: center;
 
-    &__title {
-        font-size: 3rem;
-        font-family: "EB Garamond";
-        font-weight: 700;
+        @include pc {
+
+        }
+    }
+    &__logo {
+        font-size: 1.8rem;
+        color: #4d2b1b;
+        font-weight: 500;
         text-align: center;
         letter-spacing: 0.15rem;
 
         @include pc {
-            font-size: 4.5rem;
-            line-height: calc(45 /32);
-            letter-spacing: 0.22rem;
+
         }
     }
-    &__title--jp {
-        font-size: 1.6rem;
-        font-weight: 600;
-        padding: 0.8rem 0 2.9rem 0;
+    h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #fa7da3;
+        padding: 2.1rem 0 2.9rem 0;
         text-align: center;
-        letter-spacing: 0.08rem;
+        letter-spacing: 0.1rem;
+        position: relative;
 
         @include pc {
             font-size: 2rem;
             padding: 0.7rem 0 2.2rem 0;
         }
+        &::before {
+            content: "";
+            background-image: url(/assets/image/star.png);
+            width: 5.7rem;
+            height: 5.6rem;
+            display: inline-block;
+            position: absolute;
+            left: 2rem;
+            top: 6%;
+        }
+        &::after {
+            content: "";
+            background-image: url(/assets/image/star_right.png);
+            width: 5.7rem;
+            height: 5.6rem;
+            display: inline-block;
+            position: absolute;
+            right: 2rem;
+            top: 6%;
+        }
     }
+    &__item {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 35rem;
+
+        &--title {
+            border-radius: 1rem 1rem 0 0;
+            background-color: #fa7da3;
+            font-size: 1.8rem;
+            color: #fff;
+            padding: 1.3rem 0;
+            display: flex;
+            justify-content: center;
+        }
+        &_01 {
+            padding-right: 1rem;
+        }
+        &_02 {
+            border-left: 0.1rem solid #fff;
+            padding-left: 1rem;
+        }
+        &--info {
+            border-radius: 0 0 1rem 1rem;
+            background-color: #fff;
+            border: 0.1rem solid #fa7da3;
+            padding: 1.3rem 1rem;
+        }
+        p {
+            width: 31rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            line-height: calc(21 / 14);
+        }
+        ol {
+            justify-content: center;
+            gap: 1rem;
+        }
+        li {
+
+        }
+        &__logo {
+
+        }
+        &__logo_01 {
+            background-color: #fff;
+            border: 1px solid #fa7da3;
+            padding: 4rem 3rem;
+        }
+        &__logo_02 {
+            background-color: #fdf0f5;
+            border: 1px solid #666666;
+            padding: 4rem 3rem;
+            font-size: 1.8rem;
+            letter-spacing: 0.2rem;
+            color: #433e3f;
+            text-align: center;
+        }
+        &__note {
+            font-size: 1.4rem;
+        }
+    }
+
+
     .swiper__container {
         position: relative;
         width: 100%;
