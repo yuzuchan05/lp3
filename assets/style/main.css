@@ -438,6 +438,9 @@ li {
     height: auto;
   }
 }
+.contact_02 {
+  padding: 1rem 2rem 2rem;
+}
 .contact__container {
   text-align: center;
 }
@@ -499,7 +502,7 @@ li {
   margin: 0.2rem 0 0 1.3rem;
 }
 
-/* contact
+/* free
 ---------------------------------------- */
 .free {
   padding: 0.8rem 2rem 3rem;
@@ -527,9 +530,11 @@ li {
 /* point
 ---------------------------------------- */
 .point {
-  padding: 5rem 1.6rem 5rem;
+  padding: 5rem 1.6rem 0;
   margin: 0 auto;
   max-width: 102.4rem;
+  /* -------- point02 -------- */
+  /* -------- point03 -------- */
 }
 @media screen and (min-width: 768px) {
   .point {
@@ -547,7 +552,7 @@ li {
   text-align: center;
   letter-spacing: 0.15rem;
 }
-.point h1 {
+.point__second--main {
   font-size: 3.2rem;
   font-weight: 700;
   color: #fa7da3;
@@ -557,12 +562,12 @@ li {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .point h1 {
+  .point__second--main {
     font-size: 2rem;
     padding: 0.7rem 0 2.2rem 0;
   }
 }
-.point h1::before {
+.point__second--main::before {
   content: "";
   background-image: url(/assets/image/star.png);
   width: 5.7rem;
@@ -572,7 +577,7 @@ li {
   left: 2rem;
   top: 6%;
 }
-.point h1::after {
+.point__second--main::after {
   content: "";
   background-image: url(/assets/image/star_right.png);
   width: 5.7rem;
@@ -586,6 +591,7 @@ li {
   text-align: center;
   margin: 0 auto;
   max-width: 35rem;
+  margin: 0 0 3rem 0;
 }
 .point__item--title {
   border-radius: 1rem 1rem 0 0;
@@ -607,36 +613,89 @@ li {
   border-radius: 0 0 1rem 1rem;
   background-color: #fff;
   border: 0.1rem solid #fa7da3;
-  padding: 1.3rem 1rem;
+  padding: 1.3rem 1.3rem 2rem;
 }
-.point__item p {
-  width: 31rem;
+.point__info--catch {
   font-size: 1.4rem;
-  letter-spacing: 0.1rem;
   line-height: 1.5;
+  text-align: left;
+  padding: 0 0 1.5rem 0;
 }
-.point__item ol {
+.point__item--detail {
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
-.point__item__logo_01 {
+.point__place_01 {
   background-color: #fff;
   border: 1px solid #fa7da3;
-  padding: 4rem 3rem;
+  padding: 2.4rem 4rem;
 }
-.point__item__logo_02 {
+.point__place_02 {
   background-color: #fdf0f5;
   border: 1px solid #666666;
-  padding: 4rem 3rem;
+  padding: 3.4rem 3.2rem;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   color: #433e3f;
   text-align: center;
 }
-.point__item__note {
+.point__note {
   font-size: 1.4rem;
+  padding: 1rem 0 0 0;
 }
-.point .swiper__container {
+.point__item--info_02 {
+  padding: 1.3rem 1.5rem 2rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.point__info--catch_02 {
+  padding: 0 0 0.5rem 0;
+}
+.point__second--main_02 {
+  color: #4d2c1c;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 2.1rem 0 2.9rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .point__second--main_02 {
+    font-size: 2rem;
+    padding: 0.7rem 0 2.2rem 0;
+  }
+}
+.point__second--main_03 {
+  color: #4d2c1c;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 3.3rem 0 1.9rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .point__second--main_03 {
+    font-size: 2rem;
+    padding: 0.7rem 0 2.2rem 0;
+  }
+}
+.point__item--detail_02 {
+  flex-wrap: wrap;
+  margin: 1rem 0 0;
+  row-gap: 1.5rem;
+}
+.point__second--name {
+  font-size: 1.4rem;
+  color: #fa7da3;
+  font-weight: 700;
+  padding: 0.5rem 0 0;
+  text-align: center;
+}
+.point__item--info_03 {
+  padding: 1.3rem 1.5rem 2rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.swiper__container {
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -645,76 +704,77 @@ li {
   --swiper-pagination-bullet-inactive-opacity: 1;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper__container {
+  .swiper__container {
     max-width: 115.6rem;
     margin-inline: auto;
   }
 }
-.point .swiper {
+
+.swiper {
   padding: 0.8rem 3.9rem;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper {
+  .swiper {
     padding: 2rem 0;
     max-width: 98rem;
   }
 }
-.point .swiper-slide {
+.swiper-slide {
   padding: 2.9rem 1.5rem 2.5rem 1.5rem;
   background-color: #DBF7F9;
   width: 28rem;
   margin: 0 0 1.6rem 0;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-slide {
+  .swiper-slide {
     padding: 4rem 1.7rem 3.8rem 1.5rem;
   }
 }
-.point .swiper__img {
+.swiper__img {
   width: 8.5rem;
   height: 8rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper__img {
+  .swiper__img {
     width: 10.5rem;
     height: unset;
   }
 }
-.point .swiper img {
+.swiper img {
   padding-left: 0.5rem;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper img {
+  .swiper img {
     width: 100%;
     padding-left: 0.5rem;
   }
 }
-.point .swiper__ppl {
+.swiper__ppl {
   font-size: 1.4rem;
   text-align: center;
   padding: 1rem 0 1.6rem;
   letter-spacing: 0.03rem;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper__ppl {
+  .swiper__ppl {
     padding: 1.1rem 0 1.6rem;
   }
 }
-.point .swiper p {
+.swiper p {
   font-size: 1.4rem;
   line-height: 2;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper p {
+  .swiper p {
     font-size: 1.6rem;
     line-height: 1.75;
   }
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-pagination {
+  .swiper-pagination {
     --swiper-pagination-color: #00AFBF;
     --swiper-pagination-bullet-inactive-color: #EEEEEE;
     --swiper-pagination-bullet-inactive-opacity: 1;
@@ -722,15 +782,15 @@ li {
     bottom: 1%;
   }
 }
-.point .swiper-pagination-bullets {
+.swiper-pagination-bullets {
   bottom: -1%;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-pagination-bullets {
+  .swiper-pagination-bullets {
     bottom: 0%;
   }
 }
-.point .swiper-button-next, .point .swiper-button-prev {
+.swiper-button-next, .swiper-button-prev {
   background-size: contain;
   width: 3.2rem;
   height: 3.2rem;
@@ -740,31 +800,31 @@ li {
   transform: translateY(-54%);
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-button-next, .point .swiper-button-prev {
+  .swiper-button-next, .swiper-button-prev {
     width: 4.8rem;
     height: 4.8rem;
   }
 }
-.point .swiper-button-next::after, .point .swiper-button-prev::after {
+.swiper-button-next::after, .swiper-button-prev::after {
   content: "";
 }
-.point .swiper-button-prev {
+.swiper-button-prev {
   background-image: url(/assets/image/arrow_left.svg);
   left: 0%;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-button-prev {
+  .swiper-button-prev {
     top: 53%;
     transform: translateY(-50%);
     left: 0;
   }
 }
-.point .swiper-button-next {
+.swiper-button-next {
   background-image: url(/assets/image/arrow_right.svg);
   right: 0%;
 }
 @media screen and (min-width: 768px) {
-  .point .swiper-button-next {
+  .swiper-button-next {
     top: 53%;
     transform: translateY(-50%);
     right: 0;
@@ -960,7 +1020,7 @@ li {
 /* footer
 -------------------------------------------- */
 .footer {
-  background-color: #0071CE;
+  background-color: #fff;
   padding: 2.9rem 1.6rem 2.4rem;
 }
 @media screen and (min-width: 768px) {
