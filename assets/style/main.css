@@ -114,21 +114,12 @@ li {
     margin: 0 1.6rem;
   }
 }
-.header__logo-01 {
+.header__logo img {
   align-items: center;
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .header__logo-01 {
-    max-width: 16.6rem;
-    margin: 0 1.6rem;
-  }
-}
-.header__logo-02 {
-  padding: 0.3rem 0 0;
-}
-@media screen and (min-width: 768px) {
-  .header__logo-02 {
+  .header__logo img {
     max-width: 16.6rem;
     margin: 0 1.6rem;
   }
@@ -205,9 +196,10 @@ li {
 /* top
 -----------------------------------------*/
 .top__container {
-  background-image: url("/assets/image/woman_sp.png");
+  background-image: url("/assets/image/top_woman.png");
   text-align: center;
   min-height: 31.8rem;
+  background-color: #fa7da3;
   color: #fff;
   display: flex;
   margin-top: 6.3rem;
@@ -258,6 +250,7 @@ li {
 .top__left--title {
   text-align: center;
   padding: 0.8rem 1.8rem 0 1.6rem;
+  margin: 0 0 1.15rem 0;
 }
 @media screen and (min-width: 768px) {
   .top__left--title {
@@ -276,29 +269,6 @@ li {
     left: 16%;
   }
 }
-.top h1 {
-  font-size: 4.2rem;
-  margin: 0 0 1.15rem 0;
-}
-@media screen and (min-width: 768px) {
-  .top h1 {
-    font-size: 5rem;
-    line-height: 1.36;
-    margin: 0 0 1rem 0;
-    letter-spacing: 1.48rem;
-  }
-}
-.top h2 {
-  font-size: 1.8rem;
-  line-height: 1.23;
-}
-@media screen and (min-width: 768px) {
-  .top h2 {
-    font-size: 5rem;
-    line-height: 1.36;
-    letter-spacing: 1.48rem;
-  }
-}
 .top__right {
   display: flex;
   flex-direction: column;
@@ -307,17 +277,9 @@ li {
   display: flex;
   width: 18.8rem;
   height: 10.7rem;
-  filter: drop-shadow(0.35rem 0.35rem 0 rgba(0, 0, 0, 0.25));
+  box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.3);
   position: relative;
-}
-.top__right--upper::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  box-shadow: 0.35rem 0.35rem 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 10.5rem;
 }
 .top__right--item {
   display: flex;
@@ -432,6 +394,7 @@ li {
 .give .give__item {
   text-align: center;
   margin: 0 auto;
+  max-width: 35rem;
 }
 .give .give__item--title {
   border-radius: 1rem 1rem 0 0;
@@ -457,6 +420,8 @@ li {
 .give p {
   font-size: 1rem;
   color: #333;
+  padding: 1rem 0 0 0;
+  text-align: center;
 }
 
 /* mask
