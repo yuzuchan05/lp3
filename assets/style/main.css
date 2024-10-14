@@ -695,6 +695,133 @@ li {
   text-align: left;
 }
 
+/* course
+---------------------------------------- */
+.course {
+  padding: 5rem 1.6rem 0;
+  margin: 0 auto;
+  max-width: 102.4rem;
+}
+.course__title {
+  font-size: 1.8rem;
+  color: #4d2b1b;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.15rem;
+}
+.course__main {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fa7da3;
+  padding: 2.1rem 0 2.9rem 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .course__main {
+    font-size: 2rem;
+    padding: 0.7rem 0 2.2rem 0;
+  }
+}
+.course__main::before {
+  content: "";
+  background-image: url(/assets/image/star.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  left: 2rem;
+  top: 6%;
+}
+.course__main::after {
+  content: "";
+  background-image: url(/assets/image/star_right.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 6%;
+}
+.course__item {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin: 0 0 3rem 0;
+}
+.course__item--title {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fdf0f5;
+  border-top: 0.1rem solid #fa7da3;
+  border-right: 0.1rem solid #fa7da3;
+  border-left: 0.1rem solid #fa7da3;
+  font-size: 1.8rem;
+  color: #fa7da3;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.course__item--info {
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #fa7da3;
+  border-right: 0.1rem solid #fa7da3;
+  border-left: 0.1rem solid #fa7da3;
+  padding: 1.3rem 1.8rem 2rem;
+}
+.course__info--catch {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 0 1.5rem 0;
+}
+.course__pic {
+  width: 31rem;
+  height: 20rem;
+}
+
+/* voice
+---------------------------------------- */
+.voice {
+  background-color: #fdf0f5;
+}
+.voice__main {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fa7da3;
+  padding: 2.1rem 0 2.9rem 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .voice__main {
+    font-size: 2rem;
+    padding: 0.7rem 0 2.2rem 0;
+  }
+}
+.voice__main::before {
+  content: "";
+  background-image: url(/assets/image/star.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  left: 2rem;
+  top: 6%;
+}
+.voice__main::after {
+  content: "";
+  background-image: url(/assets/image/star_right.png);
+  width: 5.7rem;
+  height: 5.6rem;
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 6%;
+}
+
 .swiper__container {
   position: relative;
   width: 100%;
