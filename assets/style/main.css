@@ -360,6 +360,14 @@ li {
   padding: 0.5rem 0.8rem;
   min-width: 13.3rem;
 }
+@media screen and (min-width: 768px) {
+  .top li {
+    font-size: 2.8rem;
+    margin: 0 0 1.9rem 0;
+    padding: 1rem 0.8rem;
+    min-width: 42.3rem;
+  }
+}
 
 /* give
 ---------------------------------------- */
@@ -376,9 +384,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .give__catch {
-    display: flex;
-    padding: 1.1rem 0 0.4rem 0;
-    font-size: 24px;
+    padding: 0 0 1.4rem 0;
+    font-size: 3.4rem;
   }
 }
 .give__catch::before, .give__catch::after {
@@ -391,8 +398,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .give__catch::before, .give__catch::after {
-    top: 51%;
-    width: 2rem;
+    top: 45%;
+    width: 4rem;
   }
 }
 .give__catch::before {
@@ -401,7 +408,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .give__catch::before {
-    right: calc(50% + 54px);
+    right: calc(50% + 5.3rem);
   }
 }
 .give__catch::after {
@@ -410,13 +417,18 @@ li {
 }
 @media screen and (min-width: 768px) {
   .give__catch::after {
-    left: calc(50% + 54px);
+    left: calc(50% + 5.3rem);
   }
 }
 .give .give__item {
   text-align: center;
   margin: 0 auto;
   max-width: 35rem;
+}
+@media screen and (min-width: 768px) {
+  .give .give__item {
+    max-width: 55rem;
+  }
 }
 .give .give__item--title {
   border-radius: 1rem 1rem 0 0;
@@ -425,6 +437,11 @@ li {
   color: #fff;
   padding: 0.8rem 0;
 }
+@media screen and (min-width: 768px) {
+  .give .give__item--title {
+    font-size: 3.2rem;
+  }
+}
 .give .give__item--info {
   color: #fa7da3;
   border-radius: 0 0 1rem 1rem;
@@ -432,17 +449,38 @@ li {
   border: 0.1rem solid #fa7da3;
   padding: 0.8rem 0;
 }
+@media screen and (min-width: 768px) {
+  .give .give__item--info {
+    padding: 0.8rem 0 1.2rem;
+  }
+}
 .give .give__item .large {
   font-size: 4.2rem;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .give .give__item .large {
+    font-size: 6.8rem;
+  }
+}
 .give .give__item .small {
   font-size: 3.1rem;
+}
+@media screen and (min-width: 768px) {
+  .give .give__item .small {
+    font-size: 4.5rem;
+  }
 }
 .give p {
   font-size: 1rem;
   padding: 1rem 0 0 0;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .give p {
+    font-size: 1.4rem;
+    padding: 1.6rem 0 0 0;
+  }
 }
 
 /* contact
@@ -452,7 +490,9 @@ li {
 }
 @media screen and (min-width: 768px) {
   .contact {
-    height: auto;
+    max-width: 103rem;
+    margin: 0 auto;
+    padding: 4.8rem 2rem 2rem;
   }
 }
 .contact_02 {
@@ -464,6 +504,12 @@ li {
 .contact__container {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .contact__container {
+    margin: 0 auto;
+    max-width: 57rem;
+  }
+}
 .contact__title {
   font-size: 2.1rem;
   color: #fa7da3;
@@ -472,7 +518,9 @@ li {
 }
 @media screen and (min-width: 768px) {
   .contact__title {
-    font-size: 2.1rem;
+    font-size: 3.4rem;
+    letter-spacing: 0.3rem;
+    padding: 0 0 1.8rem 0;
   }
 }
 .contact .btn {
@@ -488,25 +536,21 @@ li {
   color: #fff;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .contact .btn {
+    padding: 1.3rem 5.8rem 1.3rem 6.1rem;
+    letter-spacing: 0.3rem;
+    border-radius: 6.5rem;
+    font-size: 3.4rem;
+    line-height: 1.2647058824;
+  }
+}
 .contact .btn__form {
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .contact .btn__form {
-    display: flex;
-    padding: 0;
-    gap: 3.2rem;
-    margin: 0;
-  }
 }
 .contact .btn__form-02 {
   background-color: #49c43d;
   color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .contact .btn__form-02 {
-    margin: 0 4.8rem 0 0;
-  }
 }
 .contact .btn__form-02:hover {
   filter: brightness(1.2);
@@ -527,6 +571,13 @@ li {
 .free {
   padding: 0.8rem 2rem 3rem;
 }
+@media screen and (min-width: 768px) {
+  .free {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 0.8rem 2rem 4rem;
+  }
+}
 .free__item {
   font-size: 1.7rem;
   color: #50bfff;
@@ -538,13 +589,41 @@ li {
   border-bottom: 0.1rem solid #50bfff;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .free__item {
+    font-size: 2.8rem;
+    color: #50bfff;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin: 1.3rem 0 2rem;
+    padding: 1.3rem 0;
+  }
+}
 .free__item--info {
   font-size: 1.4rem;
   text-align: left;
   line-height: 1.2;
 }
+@media screen and (min-width: 768px) {
+  .free__item--info {
+    font-size: 2.3rem;
+  }
+}
 .free__item--info-01 {
   padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .free__item--info-01 {
+    padding-bottom: 0.7rem;
+  }
+}
+.free__small {
+  font-size: 80%;
+}
+@media screen and (min-width: 768px) {
+  .free__small {
+    font-size: 75%;
+  }
 }
 
 /* point
@@ -553,17 +632,24 @@ li {
   padding: 5rem 1.6rem 0;
   margin: 0 auto;
   max-width: 102.4rem;
+  background-color: #fdf0f5;
   /* -------- point02 -------- */
   /* -------- point03 -------- */
 }
 @media screen and (min-width: 768px) {
   .point {
-    padding: 7.7rem 1.6rem 7.5rem;
+    padding: 5rem 1.6rem 0;
     max-width: unset;
   }
 }
 .point__container {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .point__container {
+    max-width: 82rem;
+    margin: 0 auto;
+  }
 }
 .point__logo {
   font-size: 1.8rem;
@@ -583,8 +669,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .point__second--main {
-    font-size: 2rem;
-    padding: 0.7rem 0 2.2rem 0;
+    font-size: 4.2rem;
+    padding: 1.7rem 0 3.2rem 0;
   }
 }
 .point__second--main::before {
@@ -597,6 +683,11 @@ li {
   left: 3%;
   top: 6%;
 }
+@media screen and (min-width: 768px) {
+  .point__second--main::before {
+    left: 26%;
+  }
+}
 .point__second--main::after {
   content: "";
   background-image: url(/assets/image/star_right.png);
@@ -607,11 +698,22 @@ li {
   right: 3%;
   top: 6%;
 }
+@media screen and (min-width: 768px) {
+  .point__second--main::after {
+    right: 26%;
+  }
+}
 .point__item {
   text-align: center;
   margin: 0 auto;
   max-width: 35rem;
   margin: 0 auto 3rem;
+}
+@media screen and (min-width: 768px) {
+  .point__item {
+    max-width: unset;
+    margin: 0 auto 4rem;
+  }
 }
 .point__item--title {
   border-radius: 1rem 1rem 0 0;
@@ -622,12 +724,29 @@ li {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .point__item--title {
+    font-size: 2.8rem;
+    color: #fff;
+    padding: 1.6rem 0;
+  }
+}
 .point__item_01 {
   padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .point__item_01 {
+    padding-right: 1.5rem;
+  }
 }
 .point__item_02 {
   border-left: 0.1rem solid #fff;
   padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .point__item_02 {
+    padding-left: 1.5rem;
+  }
 }
 .point__item--info {
   border-radius: 0 0 1rem 1rem;
@@ -641,6 +760,14 @@ li {
   text-align: left;
   padding: 0 0 1.5rem 0;
 }
+@media screen and (min-width: 768px) {
+  .point__info--catch {
+    font-size: 2.1rem;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 0 1.8rem 5rem;
+  }
+}
 .point__box {
   justify-content: center;
 }
@@ -648,10 +775,26 @@ li {
   justify-content: center;
   gap: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .point__item--detail {
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .point__place img {
+    width: 130%;
+    max-width: unset;
+  }
+}
 .point__place_01 {
   background-color: #fff;
   border: 1px solid #fa7da3;
   padding: 23% 4rem;
+}
+@media screen and (min-width: 768px) {
+  .point__place_01 {
+    padding: 3.7rem 7rem 3.7rem 6rem;
+  }
 }
 .point__place_02 {
   background-color: #fdf0f5;
@@ -662,17 +805,40 @@ li {
   color: #433e3f;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .point__place_02 {
+    font-size: 2.9rem;
+    letter-spacing: 0.2rem;
+    padding: 4.6rem 5rem 4.6rem 5rem;
+  }
+}
 .point__note {
   font-size: 1.4rem;
   padding: 1rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .point__note {
+    font-size: 2.1rem;
+  }
 }
 .point__item--info_02 {
   padding: 1.3rem 1.5rem 2rem;
   font-size: 1.4rem;
   text-align: left;
 }
+@media screen and (min-width: 768px) {
+  .point__item--info_02 {
+    padding: 1.3rem 5.3rem 2rem;
+  }
+}
 .point__info--catch_02 {
   padding: 0 0 0.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .point__info--catch_02 {
+    font-size: 2.1rem;
+    padding: 1.2rem 0 2.6rem 0;
+  }
 }
 .point__second--main_02 {
   color: #4d2c1c;
@@ -683,7 +849,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .point__second--main_02 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 0.7rem 0 2.2rem 0;
   }
 }
@@ -709,6 +875,16 @@ li {
 }
 .point__second--boxes {
   padding: 0 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .point__second-pic {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .point__second-pic img {
+    width: 100%;
+  }
 }
 .point__second--name {
   font-size: 1.2rem;

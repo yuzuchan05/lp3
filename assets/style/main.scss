@@ -378,6 +378,13 @@ li {
         margin: 0 0 1.5rem 0;
         padding: 0.5rem 0.8rem;
         min-width: 13.3rem;
+
+        @include pc {
+            font-size: 2.8rem;
+            margin: 0 0 1.9rem 0;
+            padding: 1rem 0.8rem;
+            min-width: 42.3rem;
+        }
     }
 }
 
@@ -395,9 +402,8 @@ li {
         padding: 0 0 0.4rem 0;
 
         @include pc {
-            display: flex;
-            padding: 1.1rem 0 0.4rem 0;
-            font-size: 24px;
+            padding: 0 0 1.4rem 0;
+            font-size: 3.4rem;
         }
         &::before,
         &::after {
@@ -409,8 +415,8 @@ li {
             background-color: #fa7da3;
 
             @include pc {
-                top: 51%;
-                width: 2rem;
+                top: 45%;
+                width: 4rem;
             }
         }
         &::before {
@@ -418,7 +424,7 @@ li {
             transform: rotate(63deg);
 
             @include pc {
-                right: calc(50% + 54px);
+                right: calc(50% + 5.3rem);
             }
         }
         &::after {
@@ -426,7 +432,7 @@ li {
             transform: rotate(-63deg);
 
             @include pc {
-              left: calc(50% + 54px);
+              left: calc(50% + 5.3rem);
             }
         }
     }
@@ -435,12 +441,20 @@ li {
         margin: 0 auto;
         max-width: 35rem;
 
+        @include pc {
+          max-width: 55rem;
+        }
+
         &--title {
             border-radius: 1rem 1rem 0 0;
             background-color: #fa7da3;
             font-size: 2.1rem;
             color: #fff;
             padding: 0.8rem 0;
+
+            @include pc {
+                font-size: 3.2rem;
+            }
         }
         &--info {
             color: #fa7da3;
@@ -448,13 +462,25 @@ li {
             background-color: #fff;
             border: 0.1rem solid #fa7da3;
             padding: 0.8rem 0;
+
+            @include pc {
+                padding: 0.8rem 0 1.2rem;
+            }
         }
         .large {
-          font-size: 4.2rem;
-          font-weight: 700;
+            font-size: 4.2rem;
+            font-weight: 700;
+
+            @include pc {
+                font-size: 6.8rem;
+            }
         }
         .small {
             font-size: 3.1rem;
+
+            @include pc {
+                font-size: 4.5rem;
+            }
         }
     }
 
@@ -462,6 +488,11 @@ li {
         font-size: 1rem;
         padding: 1rem 0 0 0;
         text-align: center;
+
+        @include pc {
+            font-size: 1.4rem;padding: 1.6rem 0 0 0;
+
+        }
     }
 }
 
@@ -472,7 +503,9 @@ li {
     padding: 4.8rem 2rem 1rem;
 
     @include pc {
-        height: auto;
+        max-width: 103rem;
+        margin: 0 auto;
+        padding: 4.8rem 2rem 2rem;
     }
     &_02 {
         padding: 1rem 2rem 2rem;
@@ -484,7 +517,8 @@ li {
       text-align: center;
 
         @include pc {
-
+            margin: 0 auto;
+            max-width: 57rem;
         }
     }
     &__title {
@@ -494,7 +528,9 @@ li {
       padding: 0 0 1.2rem 0;
 
         @include pc {
-            font-size: 2.1rem;
+            font-size: 3.4rem;
+            letter-spacing: 0.3rem;
+            padding: 0 0 1.8rem 0;
         }
     }
     .btn {
@@ -510,22 +546,23 @@ li {
         color: #fff;
         margin: 0 auto;
 
+        @include pc {
+            padding: 1.3rem 5.8rem 1.3rem 6.1rem;
+            letter-spacing: 0.3rem;
+            border-radius: 6.5rem;
+            font-size: 3.4rem;
+            line-height: calc(43 / 34);
+        }
+
         &__form {
             margin: 0 auto;
-
-            @include pc {
-                display: flex;
-                padding: 0;
-                gap: 3.2rem;
-                margin: 0;
-            }
         }
         &__form-02 {
             background-color: #49c43d;
             color: #fff;
 
             @include pc {
-                margin: 0 4.8rem 0 0;
+
             }
 
             &:hover {
@@ -551,6 +588,12 @@ li {
 .free {
     padding: 0.8rem 2rem 3rem;
 
+    @include pc {
+        max-width: 61rem;
+        margin: 0 auto;
+        padding: 0.8rem 2rem 4rem;
+    }
+
     &__item {
         font-size: 1.7rem;
         color: #50bfff;
@@ -562,14 +605,38 @@ li {
         border-bottom: 0.1rem solid #50bfff;
         text-align: center;
 
+        @include pc {
+            font-size: 2.8rem;
+            color: #50bfff;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+            margin: 1.3rem 0 2rem;
+            padding: 1.3rem 0;
+        }
+
         &--info {
             font-size: 1.4rem;
             text-align: left;
             line-height: calc(24 / 20);
 
-            &-01 {
-              padding-bottom: 0.5rem;
+            @include pc {
+                font-size: 2.3rem;
             }
+
+            &-01 {
+                padding-bottom: 0.5rem;
+
+                @include pc {
+                  padding-bottom: 0.7rem;
+                }
+            }
+        }
+    }
+    &__small {
+        font-size: 80%;
+
+        @include pc {
+            font-size: 75%;
         }
     }
 }
@@ -580,16 +647,18 @@ li {
     padding: 5rem 1.6rem 0;
     margin: 0 auto;
     max-width: 102.4rem;
+    background-color: #fdf0f5;
 
     @include pc {
-        padding: 7.7rem 1.6rem 7.5rem;
+        padding: 5rem 1.6rem 0;
         max-width: unset;
     }
     &__container {
       text-align: center;
 
         @include pc {
-
+            max-width: 82rem;
+            margin: 0 auto;
         }
     }
     &__logo {
@@ -613,8 +682,8 @@ li {
         position: relative;
 
         @include pc {
-            font-size: 2rem;
-            padding: 0.7rem 0 2.2rem 0;
+            font-size: 4.2rem;
+            padding: 1.7rem 0 3.2rem 0;
         }
         &::before {
             content: "";
@@ -625,6 +694,10 @@ li {
             position: absolute;
             left: 3%;
             top: 6%;
+
+            @include pc {
+                left: 26%;
+            }
         }
         &::after {
             content: "";
@@ -635,6 +708,10 @@ li {
             position: absolute;
             right: 3%;
             top: 6%;
+
+            @include pc {
+                right: 26%;
+            }
         }
     }
     &__item {
@@ -642,6 +719,11 @@ li {
         margin: 0 auto;
         max-width: 35rem;
         margin: 0 auto 3rem;
+
+        @include pc {
+            max-width: unset;
+            margin: 0 auto 4rem;
+        }
 
         &--title {
             border-radius: 1rem 1rem 0 0;
@@ -651,13 +733,27 @@ li {
             padding: 1.3rem 0;
             display: flex;
             justify-content: center;
+
+            @include pc {
+                font-size: 2.8rem;
+                color: #fff;
+                padding: 1.6rem 0;
+            }
         }
         &_01 {
             padding-right: 1rem;
+
+            @include pc {
+                padding-right: 1.5rem;
+            }
         }
         &_02 {
             border-left: 0.1rem solid #fff;
             padding-left: 1rem;
+
+            @include pc {
+                padding-left: 1.5rem;
+            }
         }
         &--info {
             border-radius: 0 0 1rem 1rem;
@@ -671,6 +767,13 @@ li {
         line-height: calc(21 / 14);
         text-align: left;
         padding: 0 0 1.5rem 0;
+
+        @include pc {
+            font-size: 2.1rem;
+            line-height: 1.5;
+            text-align: left;
+            padding: 0 0 1.8rem 5rem;
+        }
     }
     &__box {
         justify-content: center;
@@ -678,14 +781,27 @@ li {
     &__item--detail {
         justify-content: center;
         gap: 2rem;
+
+        @include pc {
+            gap: 3rem;
+        }
     }
     &__place {
-
+        img {
+            @include pc {
+                width: 130%;
+                max-width: unset;
+            }
+        }
     }
     &__place_01 {
         background-color: #fff;
         border: 1px solid #fa7da3;
         padding: 23% 4rem;
+
+        @include pc {
+            padding: 3.7rem 7rem 3.7rem 6rem;
+        }
     }
     &__place_02 {
         background-color: #fdf0f5;
@@ -695,10 +811,20 @@ li {
         letter-spacing: 0.2rem;
         color: #433e3f;
         text-align: center;
+
+        @include pc {
+            font-size: 2.9rem;
+            letter-spacing: 0.2rem;
+            padding: 4.6rem 5rem 4.6rem 5rem;
+        }
     }
     &__note {
         font-size: 1.4rem;
         padding: 1rem 0 0 0;
+
+        @include pc {
+            font-size: 2.1rem;
+        }
     }
 
 
@@ -708,9 +834,18 @@ li {
         padding: 1.3rem 1.5rem 2rem;
         font-size: 1.4rem;
         text-align: left;
+
+        @include pc {
+            padding: 1.3rem 5.3rem 2rem;
+        }
     }
     &__info--catch_02 {
         padding: 0 0 0.5rem 0;
+
+        @include pc {
+            font-size: 2.1rem;
+            padding: 1.2rem 0 2.6rem 0;
+        }
     }
     &__second--main_02 {
         color: #4d2c1c;
@@ -720,7 +855,7 @@ li {
         text-align: center;
 
         @include pc {
-            font-size: 2rem;
+            font-size: 2.4rem;
             padding: 0.7rem 0 2.2rem 0;
         }
     }
@@ -748,6 +883,14 @@ li {
     }
     &__second-pic {
 
+        @include pc {
+            width: 50rem;
+        }
+        img {
+            @include pc {
+                width: 100%;
+            }
+        }
     }
     &__second--name {
         font-size: 1.2rem;
