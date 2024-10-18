@@ -32,7 +32,7 @@ var mySwiper = new Swiper(".swiper", {
       1200: {                  // pc表示(1200px以上)
           slidesPerView: 3,
           slidesPerGroup: 1,
-          spaceBetween: 40,
+          spaceBetween: 20,
       },
   },
 });

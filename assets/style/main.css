@@ -175,6 +175,14 @@ li {
   background-size: contain;
   margin: 0.2rem 0 0 0.3rem;
 }
+@media screen and (min-width: 768px) {
+  .header .btn__form-01::after {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: 66%;
+    margin: 0.2rem 0 0 0.8rem;
+  }
+}
 .header .btn__form-02 {
   background-color: #49c43d;
   color: #fff;
@@ -199,6 +207,14 @@ li {
   align-items: center;
   background-size: contain;
   margin: 0.2rem 0 0 0.3rem;
+}
+@media screen and (min-width: 768px) {
+  .header .btn__form-02::after {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: 66%;
+    margin: 0.2rem 0 0 0.8rem;
+  }
 }
 
 /* top
@@ -240,6 +256,8 @@ li {
     margin: 0 auto;
     background-size: auto;
     background-position: left bottom;
+    display: flex;
+    gap: 2.8rem;
   }
 }
 @media (min-width: 1501px) {
@@ -252,8 +270,6 @@ li {
   }
 }
 .top__left {
-  display: flex;
-  flex-direction: column;
   width: 52%;
 }
 @media screen and (min-width: 768px) and (min-width: 1501px) {
@@ -291,10 +307,6 @@ li {
   margin: 0 0 0 1.8rem;
   min-width: 16.6rem;
 }
-.top__right {
-  display: flex;
-  flex-direction: column;
-}
 .top__right--upper {
   display: flex;
   width: 18.8rem;
@@ -303,9 +315,20 @@ li {
   background-color: rgba(255, 255, 255, 0.3);
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .top__right--upper {
+    width: 41.3rem;
+    height: 22.2rem;
+  }
+}
 .top__right--item {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .top__right--item {
+    padding: 2rem 0 0 3rem;
+  }
 }
 .top__catch-up {
   font-size: 1.3rem;
@@ -315,9 +338,20 @@ li {
   padding: 0.5rem 0.8rem;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .top__catch-up {
+    font-size: 2.9rem;
+  }
+}
 .top__catch-down {
   font-size: 2.4rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .top__catch-down {
+    font-size: 5.4rem;
+    padding: 1rem 0;
+  }
 }
 .top__catch-yellow {
   color: #fffd7a;
@@ -330,8 +364,19 @@ li {
   vertical-align: bottom;
   line-height: 0.98;
 }
+@media screen and (min-width: 768px) {
+  .top .large {
+    font-size: 17.1rem;
+    padding: 0 0 0 2rem;
+  }
+}
 .top .small {
   font-size: 4.6rem;
+}
+@media screen and (min-width: 768px) {
+  .top .small {
+    font-size: 7.6rem;
+  }
 }
 .top p {
   font-size: 1.4rem;
@@ -342,13 +387,17 @@ li {
 }
 @media screen and (min-width: 768px) {
   .top p {
-    font-size: 2.5rem;
-    line-height: 1.44;
-    letter-spacing: 0.76rem;
+    font-size: 1.8rem;
+    padding: 1rem 0 4.1rem;
   }
 }
 .top .price-large {
   font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .top .price-large {
+    font-size: 2.6rem;
+  }
 }
 .top ul {
   margin: 0 auto;
@@ -356,15 +405,15 @@ li {
 .top li {
   font-size: 1.8rem;
   border: 0.1rem solid #fff;
-  margin: 0 0 1.5rem 0;
-  padding: 0.5rem 0.8rem;
+  margin: 0 0 1.9rem 0;
+  padding: 1rem 0.8rem;
   min-width: 13.3rem;
 }
 @media screen and (min-width: 768px) {
   .top li {
     font-size: 2.8rem;
-    margin: 0 0 1.9rem 0;
-    padding: 1rem 0.8rem;
+    margin: 0 0 2.2rem 0;
+    padding: 1.5rem 0.8rem;
     min-width: 42.3rem;
   }
 }
@@ -498,6 +547,11 @@ li {
 .contact_02 {
   padding: 1rem 2rem 2rem;
 }
+@media screen and (min-width: 768px) {
+  .contact_02 {
+    padding: 6rem 2rem 4rem;
+  }
+}
 .contact_03 {
   padding: 2rem 2rem 4rem;
 }
@@ -538,7 +592,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .contact .btn {
-    padding: 1.3rem 5.8rem 1.3rem 6.1rem;
+    padding: 1.3rem 7.8rem 1.3rem 10.1rem;
     letter-spacing: 0.3rem;
     border-radius: 6.5rem;
     font-size: 3.4rem;
@@ -564,6 +618,14 @@ li {
   align-items: center;
   background-size: contain;
   margin: 0.2rem 0 0 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .contact .btn__form-02::after {
+    margin: 0.2rem 0 0 2.3rem;
+    background-size: 95%;
+    width: 4.2rem;
+    height: 4.2rem;
+  }
 }
 
 /* free
@@ -638,7 +700,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .point {
-    padding: 5rem 1.6rem 0;
+    padding: 5rem 1.6rem 2rem;
     max-width: unset;
   }
 }
@@ -828,7 +890,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .point__item--info_02 {
-    padding: 1.3rem 5.3rem 2rem;
+    padding: 1.3rem 5.3rem 2.8rem;
   }
 }
 .point__info--catch_02 {
@@ -862,8 +924,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .point__second--main_03 {
-    font-size: 2rem;
-    padding: 0.7rem 0 2.2rem 0;
+    font-size: 2.4rem;
+    padding: 5.7rem 0 2.2rem 0;
   }
 }
 .point__item--detail_02 {
@@ -872,6 +934,14 @@ li {
   row-gap: 1.5rem;
   max-width: 31.1rem;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .point__item--detail_02 {
+    flex-wrap: unset;
+    margin: 1rem 0 0;
+    row-gap: 1.5rem;
+    max-width: unset;
+  }
 }
 .point__second--boxes {
   padding: 0 0.5rem;
@@ -893,10 +963,21 @@ li {
   padding: 0.5rem 0 0;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .point__second--name {
+    font-size: 1.4rem;
+  }
+}
 .point__item--info_03 {
   padding: 1.3rem 1.5rem 2rem;
   font-size: 1.4rem;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .point__item--info_03 {
+    font-size: 2.1rem;
+    padding: 3.1rem 5.5rem 3rem;
+  }
 }
 
 /* course
@@ -906,12 +987,22 @@ li {
   margin: 0 auto;
   max-width: 102.4rem;
 }
+@media screen and (min-width: 768px) {
+  .course {
+    padding: 2rem 1.6rem 2rem;
+  }
+}
 .course__title {
   font-size: 1.8rem;
   color: #4d2b1b;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.15rem;
+}
+@media screen and (min-width: 768px) {
+  .course__title {
+    font-size: 2.4rem;
+  }
 }
 .course__main {
   font-size: 3.2rem;
@@ -924,8 +1015,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .course__main {
-    font-size: 2rem;
-    padding: 0.7rem 0 2.2rem 0;
+    font-size: 4.2rem;
+    padding: 1.7rem 0 4.2rem 0;
   }
 }
 .course__main::before {
@@ -938,6 +1029,12 @@ li {
   left: 2rem;
   top: 6%;
 }
+@media screen and (min-width: 768px) {
+  .course__main::before {
+    left: 31rem;
+    top: 8%;
+  }
+}
 .course__main::after {
   content: "";
   background-image: url(/assets/image/star_right.png);
@@ -947,6 +1044,19 @@ li {
   position: absolute;
   right: 2rem;
   top: 6%;
+}
+@media screen and (min-width: 768px) {
+  .course__main::after {
+    right: 31rem;
+    top: 8%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .course__box {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
 }
 .course__item {
   text-align: center;
@@ -966,6 +1076,11 @@ li {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .course__item--title {
+    font-size: 2.8rem;
+  }
+}
 .course__item--info {
   border-radius: 0 0 1rem 1rem;
   background-color: #fff;
@@ -974,15 +1089,30 @@ li {
   border-left: 0.1rem solid #fa7da3;
   padding: 1.3rem 1.8rem 2rem;
 }
+@media screen and (min-width: 768px) {
+  .course__item--info_02 {
+    padding: 1.3rem 1.2rem 2rem;
+  }
+}
 .course__info--catch {
   font-size: 1.4rem;
   line-height: 1.5;
   text-align: left;
   padding: 0 0 1.5rem 0;
 }
+@media screen and (min-width: 768px) {
+  .course__info--catch {
+    font-size: 1.8rem;
+  }
+}
 .course__pic {
   width: 31rem;
   max-height: 20rem;
+}
+@media screen and (min-width: 768px) {
+  .course__pic {
+    margin: 0 auto;
+  }
 }
 
 /* voice
@@ -1002,8 +1132,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice__main {
-    font-size: 2rem;
-    padding: 0.7rem 0 2.2rem 0;
+    font-size: 4.2rem;
+    padding: 4.3rem 0 2.2rem 0;
   }
 }
 .voice__main::before {
@@ -1016,6 +1146,12 @@ li {
   left: 2rem;
   top: 6%;
 }
+@media screen and (min-width: 768px) {
+  .voice__main::before {
+    left: 55rem;
+    top: 29%;
+  }
+}
 .voice__main::after {
   content: "";
   background-image: url(/assets/image/star_right.png);
@@ -1026,12 +1162,23 @@ li {
   right: 2rem;
   top: 6%;
 }
+@media screen and (min-width: 768px) {
+  .voice__main::after {
+    right: 55rem;
+    top: 29%;
+  }
+}
 .voice__item {
   text-align: center;
   margin: 0 auto;
   max-width: 35rem;
   margin: 0 0 1.5rem 0;
   height: 18.8rem;
+}
+@media screen and (min-width: 768px) {
+  .voice__item {
+    margin: 0 0 2.5rem 0;
+  }
 }
 .voice__title {
   border-radius: 1rem 1rem 0 0;
@@ -1050,6 +1197,17 @@ li {
   border-radius: 0 0 1rem 1rem;
   gap: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .voice__down {
+    padding: 1rem 2.2rem 1.5rem 1.8rem;
+    gap: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .voice__down_02 {
+    padding: 1rem 1.2rem 1.5rem 0.5rem;
+  }
+}
 .voice__down--right {
   display: flex;
   flex-direction: column;
@@ -1059,6 +1217,11 @@ li {
   width: 38rem;
   margin: 1rem 0 0 0;
 }
+@media screen and (min-width: 768px) {
+  .voice__img {
+    width: 31rem;
+  }
+}
 .voice .swiper__container {
   position: relative;
   width: 100%;
@@ -1066,8 +1229,9 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice .swiper__container {
-    max-width: 115.6rem;
+    max-width: 103rem;
     margin-inline: auto;
+    padding: 0 0 10rem 0;
   }
 }
 .voice .swiper {
@@ -1077,8 +1241,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice .swiper {
-    padding: 2rem 0;
-    max-width: 98rem;
+    padding: 0;
+    max-width: 95rem;
   }
 }
 .voice .swiper-slide {
@@ -1092,7 +1256,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice__name {
-    padding: 1.1rem 0 1.6rem;
+    padding: 1rem 0 1rem;
   }
 }
 .voice__note {
@@ -1101,8 +1265,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .voice__note {
-    font-size: 1.6rem;
-    line-height: 1.75;
+    font-size: 1.4rem;
+    line-height: 1.7142857143;
   }
 }
 .voice .swiper-pagination {
