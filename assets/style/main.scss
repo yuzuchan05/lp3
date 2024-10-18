@@ -94,7 +94,7 @@ li {
 .header {
     width: 100%;
     padding: 0;
-    height: 6.3rem;
+    height: 6.2rem;
     position: fixed;
     top: 0;
     background: #fff;
@@ -123,7 +123,7 @@ li {
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 1.1rem;
         width: 7.3rem;
 
         @include pc {
@@ -144,7 +144,8 @@ li {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.8rem 0.9rem 0.8rem;
+        padding: 1.3rem 1.2rem 1.7rem;
+        height: 3.1rem;
         border-radius: 1.5rem;
         font-size: 1.2rem;
         color: #fff;
@@ -236,93 +237,62 @@ li {
 /* top
 -----------------------------------------*/
 .top {
-        text-align: center;
-        min-height: 31.8rem;
-        background-color: #fa7da3;
-        color: #fff;
-        display: flex;
-        margin-top: 6.3rem;
+    text-align: center;
+    min-height: 31.1rem;
+    background-color: #fa7da3;
+    color: #fff;
+    display: flex;
+    margin-top: 6.2rem;
+    height: 31.1rem;
 
-        @include pc {
-            height: auto;
-            width: 100%;
-            min-height: 61.2rem;
-            margin-top: 9.5rem;
-
-          @media (max-width:1500px) {
-
-          }
-          @media (min-width:1501px) {
-              background-size: auto;
-              background-position: left bottom;
-              padding-top: calc(720 / 1500* 100%);
-              position: relative;
-              height: 0;
-          }
-      }
+    @include pc {
+        height: auto;
+        width: 100%;
+        min-height: 61.2rem;
+        margin-top: 9.5rem;
+    }
 
     &__container {
         background-image: url("/assets/image/top_woman.png");
         background-size: 21rem 22rem;
         background-position: 4% 100%;
+        display: flex;
+        gap: 2rem;
 
-            @include pc {
-                background-image: url("/assets/image/top_woman.png");
-                width: 103rem;
-                margin: 0 auto;
-                background-size: auto;
-                background-position: left bottom;
-                display: flex;
-                gap: 2.8rem;
-            }
-            @media (max-width:1500px) {
-
-            }
-            @media (min-width:1501px) {
-                background-size: auto;
-                background-position: left bottom;
-                padding-top: calc(720 / 1500* 100%);
-                position: relative;
-                height: 0;
-            }
+        @include pc {
+            background-image: url("/assets/image/top_woman.png");
+            width: 103rem;
+            margin: 0 auto;
+            background-size: 47%;
+            background-position: left bottom;
+            gap: 2.8rem;
+        }
     }
     &__left {
         width: 52%;
 
         @include pc {
 
-
-            @media (min-width:1501px) {
-                padding-top: 0px;
-                margin: 0 auto;
-                position: absolute;
-                top: 6%;
-                left: 46%;
-            }
         }
     }
     &__left--title {
         text-align: center;
-        padding: 0.8rem 1.8rem 0 1.6rem;
         margin: 0 0 1.15rem 0;
 
         @include pc {
             margin: 0 auto;
             max-width: 105.5rem;
             padding: 0;
-
-            @media (min-width:1501px) {
-                padding-top: 0px;
-                margin: 0 auto;
-                max-width: 106rem;
-                position: absolute;
-                top: 36%;
-                left: 16%;
-            }
+            padding: 0.8rem 1.8rem 0 1.6rem;
         }
         &-sp {
-            margin: 0 0 0 1.8rem;
+            margin: 1.9rem 0 0 1.8rem;
             min-width: 16.6rem;
+
+            @include pc {
+                margin: 0 0 0 1.8rem;
+                width: 50rem;
+            }
         }
     }
     &__right {
@@ -353,8 +323,8 @@ li {
         font-size: 1.3rem;
         color: #fa7da3;
         background-color: #fff;
-        margin: 2.2rem 1rem 0.6rem 1rem;
-        padding: 0.5rem 0.8rem;
+        margin: 2.2rem 1rem 0.6rem 2.5rem;
+        padding: 0.4rem 0.5rem;
         font-weight: 700;
 
         @include pc {
@@ -364,6 +334,7 @@ li {
     &__catch-down {
         font-size: 2.4rem;
         font-weight: 700;
+        padding: 0 0 0 1.5rem;
 
         @include pc {
             font-size: 5.4rem;
@@ -387,18 +358,19 @@ li {
         }
     }
     .small {
-        font-size: 4.6rem;
+        font-size: 3.6rem;
 
         @include pc {
             font-size: 7.6rem;
         }
     }
     p {
-        font-size: 1.4rem;
+        font-size: 1rem;
+        letter-spacing: -0.09rem;
         font-family: "Outfit";
-        padding: 1rem 0 1.1rem;
+        padding: 0.5rem 0 2.2rem;
         text-align: end;
-        margin-right: 1rem;
+        margin-right: 2.8rem;
 
         @include pc {
             font-size: 1.8rem;
@@ -406,7 +378,7 @@ li {
         }
     }
     .price-large {
-        font-size: 2rem;
+        font-size: 1.4rem;
 
         @include pc {
           font-size: 2.6rem;
@@ -418,9 +390,9 @@ li {
     li {
         font-size: 1.8rem;
         border: 0.1rem solid #fff;
-        margin: 0 0 1.9rem 0;
-        padding: 1rem 0.8rem;
-        min-width: 13.3rem;
+        margin: 0 auto 1.2rem;
+        padding: 0.6rem 0.8rem;
+        width: 13.3rem;
 
         @include pc {
             font-size: 2.8rem;
@@ -435,14 +407,14 @@ li {
 ---------------------------------------- */
 .give {
     background-color: #fffedd;
-    padding: 3rem 2rem 3.2rem;
+    padding: 2.2rem 2rem 1.1rem;
 
     &__catch {
         position: relative;
         text-align: center;
         font-size: 2.1rem;
         color: #fa7da3;
-        padding: 0 0 0.4rem 0;
+        padding: 0 0 1.4rem 0;
 
         @include pc {
             padding: 0 0 1.4rem 0;
@@ -451,8 +423,8 @@ li {
         &::before,
         &::after {
             position: absolute;
-            top: 45%;
-            width: 2.1rem;
+            top: 35%;
+            width: 2.8rem;
             height: 0.14rem;
             content: "";
             background-color: #fa7da3;
@@ -463,8 +435,8 @@ li {
             }
         }
         &::before {
-            right: calc(50% + 3.8rem);
-            transform: rotate(63deg);
+            right: calc(50% + 3.4rem);
+            transform: rotate(59deg);
 
             @include pc {
                 right: calc(50% + 5.3rem);
@@ -493,7 +465,7 @@ li {
             background-color: #fa7da3;
             font-size: 2.1rem;
             color: #fff;
-            padding: 0.8rem 0;
+            padding: 0.2rem 0;
 
             @include pc {
                 font-size: 3.2rem;
@@ -504,7 +476,7 @@ li {
             border-radius: 0 0 1rem 1rem;
             background-color: #fff;
             border: 0.1rem solid #fa7da3;
-            padding: 0.8rem 0;
+            padding: 0.5rem 0 0.5rem 1.3rem;
 
             @include pc {
                 padding: 0.8rem 0 1.2rem;
@@ -519,7 +491,8 @@ li {
             }
         }
         .small {
-            font-size: 3.1rem;
+            font-size: 2.8rem;
+            letter-spacing: -0.05rem;
 
             @include pc {
                 font-size: 4.5rem;
@@ -543,7 +516,7 @@ li {
 /* contact
 ---------------------------------------- */
 .contact {
-    padding: 4.8rem 2rem 1rem;
+    padding: 2.3rem 2rem 1rem;
 
     @include pc {
         max-width: 103rem;
@@ -558,7 +531,11 @@ li {
         }
     }
     &_03 {
-      padding: 2rem 2rem 4rem;
+        padding: 2rem 2rem 4rem;
+
+        @include pc {
+            padding: 5rem 2rem 6rem;
+        }
     }
     &__container {
       text-align: center;
@@ -572,7 +549,8 @@ li {
       font-size: 2.1rem;
       color: #fa7da3;
       font-weight: 700;
-      padding: 0 0 1.2rem 0;
+      padding: 0 0 1.2rem 1.1rem;
+      letter-spacing: 0.2rem;
 
         @include pc {
             font-size: 3.4rem;
@@ -584,7 +562,7 @@ li {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem 4.8rem 1rem 5.1rem;
+        padding: 1rem 3.4rem 1.2rem 7rem;
         letter-spacing: 0.2rem;
         border-radius: 4rem;
         font-size: 2.1rem;
@@ -624,7 +602,7 @@ li {
               display: flex;
               align-items: center;
               background-size: contain;
-              margin: 0.2rem 0 0 1.3rem;
+              margin: 0.2rem 0 0 2.3rem;
 
               @include pc {
                   margin: 0.2rem 0 0 2.3rem;
@@ -640,7 +618,7 @@ li {
 /* free
 ---------------------------------------- */
 .free {
-    padding: 0.8rem 2rem 3rem;
+    padding: 0.8rem 2rem 4rem;
 
     @include pc {
         max-width: 61rem;
@@ -653,8 +631,8 @@ li {
         color: #50bfff;
         font-weight: 700;
         letter-spacing: 0.2rem;
-        margin: 1.3rem 0 2rem;
-        padding: 1rem 0;
+        margin: 1.3rem 0 1.2rem;
+        padding: 0.8rem 0 0.9rem;
         border-top: 0.1rem solid #50bfff;
         border-bottom: 0.1rem solid #50bfff;
         text-align: center;
@@ -678,7 +656,7 @@ li {
             }
 
             &-01 {
-                padding-bottom: 0.5rem;
+                padding-bottom: 0.8rem;
 
                 @include pc {
                   padding-bottom: 0.7rem;
@@ -698,7 +676,7 @@ li {
 /* point
 ---------------------------------------- */
 .point {
-    padding: 5rem 1.6rem 0;
+    padding: 3.6rem 1.6rem 0;
     margin: 0 auto;
     max-width: 102.4rem;
     background-color: #fdf0f5;
@@ -720,17 +698,17 @@ li {
         color: #4d2b1b;
         font-weight: 500;
         text-align: center;
-        letter-spacing: 0.15rem;
+        letter-spacing: 0.01rem;
 
-        @include pc {
-
+        img {
+            margin-left: 0.3rem;
         }
     }
     &__second--main {
         font-size: 3.2rem;
         font-weight: 700;
         color: #fa7da3;
-        padding: 2.1rem 0 2.9rem 0;
+        padding: 1.4rem 0 2.5rem 0;
         text-align: center;
         letter-spacing: 0.1rem;
         position: relative;
@@ -784,7 +762,7 @@ li {
             background-color: #fa7da3;
             font-size: 1.8rem;
             color: #fff;
-            padding: 1.3rem 0;
+            padding: 1.3rem 0 1rem;
             display: flex;
             justify-content: center;
 
@@ -795,7 +773,7 @@ li {
             }
         }
         &_01 {
-            padding-right: 1rem;
+            padding-right: 1.2rem;
 
             @include pc {
                 padding-right: 1.5rem;
@@ -803,7 +781,7 @@ li {
         }
         &_02 {
             border-left: 0.1rem solid #fff;
-            padding-left: 1rem;
+            padding-left: 1.3rem;
 
             @include pc {
                 padding-left: 1.5rem;
@@ -813,7 +791,8 @@ li {
             border-radius: 0 0 1rem 1rem;
             background-color: #fff;
             border: 0.1rem solid #fa7da3;
-            padding: 1.3rem 1.3rem 2rem;
+            padding: 1.3rem 2rem 2rem;
+            letter-spacing: -0.06rem;
         }
     }
     &__info--catch {
@@ -841,6 +820,13 @@ li {
         }
     }
     &__place {
+        width: 14.3rem;
+        height: 8.5rem;
+
+        @include pc {
+            width: 23.2rem;
+            height: 13.7rem;
+        }
         img {
             @include pc {
                 width: 130%;
@@ -854,7 +840,7 @@ li {
         padding: 23% 4rem;
 
         @include pc {
-            padding: 3.7rem 7rem 3.7rem 6rem;
+            padding: 3.7rem 8rem 3.7rem 6rem;
         }
     }
     &__place_02 {
@@ -1118,6 +1104,12 @@ li {
 .voice {
     background-color: #fdf0f5;
 
+    &__content {
+        @include pc {
+            margin: 0 auto;
+            max-width: 102.4rem;
+        }
+    }
     &__main {
         font-size: 3.2rem;
         font-weight: 700;
@@ -1142,7 +1134,7 @@ li {
             top: 6%;
 
             @include pc {
-                left: 55rem;
+                left: 34rem;
                 top: 29%;
             }
         }
@@ -1157,7 +1149,7 @@ li {
             top: 6%;
 
             @include pc {
-                right: 55rem;
+                right: 34rem;
                 top: 29%;
             }
         }
@@ -1221,7 +1213,7 @@ li {
         @include pc {
             max-width: 103rem;
             margin-inline: auto;
-            padding: 0 0 10rem 0;
+            padding: 0 0 5rem 0;
         }
     }
     .swiper {
@@ -1230,8 +1222,8 @@ li {
         position: relative;
 
         @include pc {
-            padding: 0;
             max-width: 95rem;
+            padding: 0 0 1.8rem 0;
         }
 
         &-slide {
@@ -1271,8 +1263,10 @@ li {
             bottom: 1%;
             width: 15px;
             height: 15px;
+            position: relative;
+            left: 50%;
         }
-    } --swiper-pagination-bullet-inactive-opacity: 1;
+    }
 
     .swiper-pagination-bullet {
         background-color: #ffd2d2;
@@ -1288,6 +1282,11 @@ li {
             background-color: #fa7da3;
             width: 1.5rem;
             height: 1.5rem;
+        }
+    }
+    .swiper-pagination-lock {
+        @include pc {
+            display: unset;
         }
     }
 }
@@ -1309,8 +1308,8 @@ li {
         text-align: center;
 
         @include pc {
-            width: 19.5rem;
-            margin: unset;
+            width: 14.4rem;
+            margin: 0 auto;
             padding: 0;
         }
     }

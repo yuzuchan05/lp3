@@ -16,7 +16,7 @@ var mySwiper = new Swiper(".swiper", {
       bulletActiveClass: 'swiper-pagination-bullet-active',
       renderBullet: function (index, className) {
         // 画面幅に応じてページネーションのドット数を変更
-        var dotsNum = window.innerWidth <= 767 ? 3 : 2;  // SPでは6つ、PCでは2つ
+        var dotsNum = window.innerWidth <= 767 ? 3 : 3;  // SPでは6つ、PCでは2つ
         if (index < dotsNum) {
             return '<span class="' + className + '"></span>';
         }
