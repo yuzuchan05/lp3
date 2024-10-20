@@ -239,8 +239,8 @@ li {
 }
 .top__container {
   background-image: url("/assets/image/top_woman.png");
-  background-size: 21rem 22rem;
-  background-position: 4% 100%;
+  background-size: 21rem 21.5rem;
+  background-position: 2% 100%;
   display: flex;
   gap: 2rem;
 }
@@ -355,7 +355,7 @@ li {
   font-size: 1rem;
   letter-spacing: -0.09rem;
   font-family: "Outfit";
-  padding: 0.5rem 0 2.2rem;
+  padding: 0.6rem 0 2.2rem;
   text-align: end;
   margin-right: 2.8rem;
 }
@@ -413,7 +413,7 @@ li {
 }
 .give__catch::before, .give__catch::after {
   position: absolute;
-  top: 35%;
+  top: 40%;
   width: 2.8rem;
   height: 0.14rem;
   content: "";
@@ -436,7 +436,7 @@ li {
 }
 .give__catch::after {
   left: calc(50% + 3.5rem);
-  transform: rotate(-63deg);
+  transform: rotate(-60deg);
 }
 @media screen and (min-width: 768px) {
   .give__catch::after {
@@ -458,7 +458,7 @@ li {
   background-color: #fa7da3;
   font-size: 2.1rem;
   color: #fff;
-  padding: 0.2rem 0;
+  padding: 0.2rem 0 0.3rem;
 }
 @media screen and (min-width: 768px) {
   .give .give__item--title {
@@ -497,7 +497,7 @@ li {
 }
 .give p {
   font-size: 1rem;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0.3rem 0 0;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -721,7 +721,7 @@ li {
 }
 .point__second--main::before {
   content: "";
-  background-image: url(/assets/image/star.png);
+  background-image: url(/assets/image/star.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
@@ -736,7 +736,7 @@ li {
 }
 .point__second--main::after {
   content: "";
-  background-image: url(/assets/image/star_right.png);
+  background-image: url(/assets/image/star_right.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
@@ -798,14 +798,14 @@ li {
   border-radius: 0 0 1rem 1rem;
   background-color: #fff;
   border: 0.1rem solid #fa7da3;
-  padding: 1.3rem 2rem 2rem;
+  padding: 1.3rem 1.9rem 2rem 2rem;
   letter-spacing: -0.06rem;
 }
 .point__info--catch {
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: left;
-  padding: 0 0 1.5rem 0;
+  padding: 0 0 1.2rem 0;
 }
 @media screen and (min-width: 768px) {
   .point__info--catch {
@@ -846,7 +846,7 @@ li {
 .point__place_01 {
   background-color: #fff;
   border: 1px solid #fa7da3;
-  padding: 23% 4rem;
+  padding: 14% 3rem;
 }
 @media screen and (min-width: 768px) {
   .point__place_01 {
@@ -856,7 +856,7 @@ li {
 .point__place_02 {
   background-color: #fdf0f5;
   border: 1px solid #666666;
-  padding: 20% 3.2rem;
+  padding: 20% 3.2rem 20% 3.5rem;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   color: #433e3f;
@@ -871,7 +871,8 @@ li {
 }
 .point__note {
   font-size: 1.4rem;
-  padding: 1rem 0 0 0;
+  padding: 0.6rem 0 0 0;
+  letter-spacing: 0.01rem;
 }
 @media screen and (min-width: 768px) {
   .point__note {
@@ -879,7 +880,7 @@ li {
   }
 }
 .point__item--info_02 {
-  padding: 1.3rem 1.5rem 2rem;
+  padding: 1.7rem 1.8rem 2rem 2rem;
   font-size: 1.4rem;
   text-align: left;
 }
@@ -889,7 +890,9 @@ li {
   }
 }
 .point__info--catch_02 {
-  padding: 0 0 0.5rem 0;
+  padding: 0 0 0.4rem 0;
+  line-height: 1.4;
+  letter-spacing: 0.01rem;
 }
 @media screen and (min-width: 768px) {
   .point__info--catch_02 {
@@ -914,7 +917,7 @@ li {
   color: #4d2c1c;
   font-size: 2.3rem;
   font-weight: 700;
-  padding: 3.3rem 0 1.9rem 0;
+  padding: 4.6rem 0 1.9rem 0;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1016,7 +1019,7 @@ li {
 }
 .course__main::before {
   content: "";
-  background-image: url(/assets/image/star.png);
+  background-image: url(/assets/image/star.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
@@ -1032,7 +1035,7 @@ li {
 }
 .course__main::after {
   content: "";
-  background-image: url(/assets/image/star_right.png);
+  background-image: url(/assets/image/star_right.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
@@ -1138,7 +1141,7 @@ li {
 }
 .voice__main::before {
   content: "";
-  background-image: url(/assets/image/star.png);
+  background-image: url(/assets/image/star.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
@@ -1154,7 +1157,7 @@ li {
 }
 .voice__main::after {
   content: "";
-  background-image: url(/assets/image/star_right.png);
+  background-image: url(/assets/image/star_right.svg);
   width: 5.7rem;
   height: 5.6rem;
   display: inline-block;
