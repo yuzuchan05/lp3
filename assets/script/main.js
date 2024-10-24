@@ -24,7 +24,7 @@ var mySwiper = new Swiper(".swiper", {
           slidesPerGroup: 1,
           spaceBetween: 12,
           pagination: {
-              el:'',
+              el: null,
           },
       },
   },
