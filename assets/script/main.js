@@ -5,7 +5,7 @@ var mySwiper = new Swiper(".swiper", {
   speed: 1000,
   slidesPerView: 1,  // SP表示時のスライド数
   slidesPerGroup: 1,
-  spaceBetween: 20,
+  spaceBetween: 15,
   centeredSlides: false, // スライドを中央揃えしない
   watchOverflow: true, // スライド数が少ない場合に無限ループを防ぐ
 
