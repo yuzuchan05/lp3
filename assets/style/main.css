@@ -677,7 +677,7 @@ li {
 /* free
 ---------------------------------------- */
 .free {
-  padding: 1しゅrem 2rem 3.8rem;
+  padding: 1rem 2rem 3.8rem;
 }
 @media screen and (min-width: 768px) {
   .free {
@@ -870,19 +870,20 @@ li {
   background-color: #fa7da3;
   font-size: 1.8rem;
   color: #fff;
-  padding: 1.3rem 0 1.1rem 0.1rem;
+  padding: 1.3rem 0 1.1rem 0;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .point__item-title {
     font-size: 2.8rem;
-    padding: 2.2rem 0.8rem 2.1rem 0;
+    padding: 2.2rem 0.6rem 2.1rem 0;
   }
 }
 @media screen and (min-width: 768px) {
   .point__item-title_02 {
-    padding: 2rem 0 2.1rem;
+    padding: 2rem 0.2rem 2.1rem 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -891,17 +892,16 @@ li {
   }
 }
 .point__item_01 {
-  padding-right: 1.2rem;
+  padding-right: 1.3rem;
 }
 @media screen and (min-width: 768px) {
   .point__item_01 {
     padding-right: 2rem;
-    letter-spacing: -0.1rem;
   }
 }
 .point__item_02 {
   border-left: 0.1rem solid #fff;
-  padding-left: 1.3rem;
+  padding-left: 1.2rem;
 }
 @media screen and (min-width: 768px) {
   .point__item_02 {
@@ -1256,6 +1256,7 @@ li {
   padding: 1.1rem 0 1.2rem;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .course__item-title {
@@ -1402,6 +1403,7 @@ li {
   padding: 1.1rem 0 1.2rem;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .voice__title {
