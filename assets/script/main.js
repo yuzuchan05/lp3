@@ -1,7 +1,6 @@
 /* お客様の声スライダー
 -----------------------------------------*/
 var mySwiper = new Swiper(".swiper", {
-    loop: true,
     speed: 1000,
     slidesPerView: 1,  // SP表示時のスライド数
     slidesPerGroup: 1,
